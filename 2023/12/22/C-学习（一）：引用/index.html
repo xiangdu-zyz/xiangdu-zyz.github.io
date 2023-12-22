@@ -20,22 +20,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" content="#f8f8f8">
   
-  <title>巷渡</title>
+  <title>C++学习（一）：引用 - 巷渡</title>
 
   
     <meta name="description" content="#C++学习（一）：引用##1.引用的基本使用：作用：给变量取别名语法：数据类型 &amp;别名 &#x3D; 原名本质：一个常量指针示例： 123456789101112131415#include &lt;iostream&gt;using namespace std;  int main()&#123;	int a &#x3D; 10;	int&amp; b &#x3D; a;	cout &lt;&lt; a">
 <meta property="og:type" content="article">
-<meta property="og:title" content="巷渡">
-<meta property="og:url" content="https://xiangdu-zyz.github.io/2023/12/22/C++%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%BC%95%E7%94%A8/index.html">
+<meta property="og:title" content="C++学习（一）：引用">
+<meta property="og:url" content="https://xiangdu-zyz.github.io/2023/12/22/C-%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%BC%95%E7%94%A8/index.html">
 <meta property="og:site_name" content="巷渡">
 <meta property="og:description" content="#C++学习（一）：引用##1.引用的基本使用：作用：给变量取别名语法：数据类型 &amp;别名 &#x3D; 原名本质：一个常量指针示例： 123456789101112131415#include &lt;iostream&gt;using namespace std;  int main()&#123;	int a &#x3D; 10;	int&amp; b &#x3D; a;	cout &lt;&lt; a">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://xiangdu-zyz.github.io/image.png">
-<meta property="og:image" content="https://xiangdu-zyz.github.io/2023/12/22/C++%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%BC%95%E7%94%A8/image-1.png">
-<meta property="og:image" content="https://xiangdu-zyz.github.io/2023/12/22/C++%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%BC%95%E7%94%A8/image-3.png">
-<meta property="og:image" content="https://xiangdu-zyz.github.io/2023/12/22/C++%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%BC%95%E7%94%A8/image-4.png">
-<meta property="article:published_time" content="2023-12-22T14:43:37.134Z">
-<meta property="article:modified_time" content="2023-12-22T14:44:13.051Z">
+<meta property="og:image" content="https://xiangdu-zyz.github.io/2023/12/22/C-%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%BC%95%E7%94%A8/image-1.png">
+<meta property="og:image" content="https://xiangdu-zyz.github.io/2023/12/22/C-%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%BC%95%E7%94%A8/image-3.png">
+<meta property="og:image" content="https://xiangdu-zyz.github.io/2023/12/22/C-%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%BC%95%E7%94%A8/image-4.png">
+<meta property="article:published_time" content="2023-12-22T14:48:42.000Z">
+<meta property="article:modified_time" content="2023-12-22T14:49:22.256Z">
 <meta property="article:author" content="xiangdi-zyz">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://xiangdu-zyz.github.io/image.png">
@@ -86,7 +86,7 @@
 
 
 
-<widget class="widget-wrapper recent"><div class="widget-header cap theme dis-select"><span class="name">最近更新</span></div><div class="widget-body related-posts fs14"></div></widget>
+<widget class="widget-wrapper recent"><div class="widget-header cap theme dis-select"><span class="name">最近更新</span></div><div class="widget-body related-posts fs14"><a class="item title" href="/2023/12/22/C-%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%BC%95%E7%94%A8/"><span class="title">C++学习（一）：引用</span></a></div></widget>
 
 
 
@@ -104,13 +104,13 @@
 
 
 <div class="bread-nav fs12"><div class="left"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div><div id="post-meta">
-    <span>发布于&nbsp;<time datetime="2023-12-22T14:43:37.134Z">2023-12-22</time></span>
+    <span>发布于&nbsp;<time datetime="2023-12-22T14:48:42.000Z">2023-12-22</time></span>
     
-    <span>更新于&nbsp;<time datetime="2023-12-22T14:44:13.051Z">2023-12-22</time></span>
+    <span>更新于&nbsp;<time datetime="2023-12-22T14:49:22.256Z">2023-12-22</time></span>
     </div></div></div>
 
 <article class='md-text content post'>
-
+<h1 class="article-title"><span>C++学习（一）：引用</span></h1>
 <p>#<em>C++学习（一）：引用</em><br>##1.引用的基本使用：<br>作用：给变量取别名<br>语法：数据类型 &amp;别名 &#x3D; 原名<br>本质：一个常量指针<br>示例：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">  </span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	int a = 10;</span><br><span class="line">	int&amp; b = a;</span><br><span class="line">	cout &lt;&lt; a &lt;&lt; endl;</span><br><span class="line">	cout &lt;&lt; b &lt;&lt; endl;</span><br><span class="line">	b = 100;</span><br><span class="line">	cout &lt;&lt; a &lt;&lt; endl;</span><br><span class="line">	cout &lt;&lt; b &lt;&lt; endl;</span><br><span class="line">  </span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>结果：<br><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/image.png" alt="Alt text"></p>
